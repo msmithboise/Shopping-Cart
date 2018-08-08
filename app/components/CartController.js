@@ -3,6 +3,9 @@ import CartService from "./CartService.js"
 
 //Private
 
+function drawGuitars(){
+    let guitars = CartService.getGuitars()
+}
 
 
 
@@ -12,6 +15,7 @@ import CartService from "./CartService.js"
 
 
 
+// Public
 
 
 class CartController {
