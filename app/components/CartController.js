@@ -2,31 +2,30 @@ import CartService from "./CartService.js"
 
 
 //Private
+const cService = new CartService()
+
+
 
 function drawGuitars(){
-    let guitars = CartService.getGuitars()
+    let guitars = cService.getGuitars()
+    console.log(guitars)
+
+    //template loop
 }
-
-
-
-
-
-
-
 
 
 // Public
-
-
 class CartController {
     constructor(){
 
+        
+    }
+    
+    addToCart(id){
+        
     }
 }
+drawGuitars()
 
-
-
-
-console.log("Hello from CartController.js")
 
 export default CartController

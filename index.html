@@ -7,10 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
-    <button>Add to cart</button>
-    <button>Add to cart</button>
-    <button>Add to cart</button>
+    <div id="guitars">
+        <div class="guitar" onclick="app.controllers.cCtrl">
+            <img src="${item.img}" alt = "">
+            <h3> ${item.price}</h3> 
+        </div>
+    </div>
+
+
 
 
     <script src ="main.js" type="module"></script>
