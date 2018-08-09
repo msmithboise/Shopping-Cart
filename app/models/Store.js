@@ -9,7 +9,8 @@ class Store {
     constructor (cart){
         this.guitars = [
             new Guitar('Stratocaster', 200, 800, "https://stuff.fendergarage.com/images/Q/a/L/fcwd-products-electric-guitars-stratocaster-01-hero-white-strat.jpg", 10 ),
-            new Guitar()
+            new Guitar('Telecaster', 100, 900, "https://www.fmicassets.com/Damroot/ZoomJpg/10002/0110132850_gtr_frt_001_rr.jpg", 10),
+            new Guitar('Jazzmaster', 300, 700, "https://www.fmicassets.com/Damroot/ZoomJpg/10001/0113092785_gtr_frt_001_rr.jpg", 10) 
         ]
     }
 
@@ -41,44 +42,10 @@ class Store {
     }
 
     getGuitars(){
-        debugger
+        
         return JSON.parse(JSON.stringify(this.guitars))
     }
 }
-
-
-
-
-// },
-// {
-//     name: "Jazzmaster",
-//     id:300,
-//     img: "https://www.fmicassets.com/Damroot/ZoomJpg/10001/0113092785_gtr_frt_001_rr.jpg",
-//     price: 700,
-//     quantity: 10
-// }
-
-// this.guitars = [{
-//     name: "Telecaster",
-//     id:100,
-//     img: "https://www.fmicassets.com/Damroot/ZoomJpg/10002/0110132850_gtr_frt_001_rr.jpg",
-//     price: 900,
-//     quantity: 10
-// },
-// ]
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
