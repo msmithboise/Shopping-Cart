@@ -15,6 +15,15 @@ class CartService {
     constructor() {
 
     }
+
+    getTotal(){
+        return gStore.calculateTotals()
+    }
+
+    addToCart(id){
+        gStore.addToCart(id)
+    }
+
     getGuitars() {
         return gStore.getGuitars()
     }
